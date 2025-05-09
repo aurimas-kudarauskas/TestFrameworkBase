@@ -1,4 +1,4 @@
-from typing import ANY
+from typing import Any
 import pytest
 
 class TestFramewor:
@@ -7,16 +7,16 @@ class TestFramewor:
         self.path = path_to_test
         TestFramewor.context["hw"] = {}
 
-    def get_hardware_context() -> dict[str,ANY]:
+    def get_hardware_context() -> dict[str,Any]:
         return TestFramewor.context["hw"]
     
-    def get_hardware_by_key(key:str) -> ANY:
+    def get_hardware_by_key(key:str) -> Any:
         return TestFramewor.context["hw"][key]
     
-    def set_hw_context(context: dict[str, ANY]):
+    def set_hw_context(context: dict[str, Any]):
         TestFramewor.context["hw"] = context
 
-    def append_context(context: dict[str, ANY]):
+    def append_context(context: dict[str, Any]):
         TestFramewor.context.update(context)
 
     def run_tests(self, extra_args: list[str]):
