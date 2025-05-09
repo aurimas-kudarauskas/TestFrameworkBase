@@ -2,6 +2,10 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+# Needed for usign repos directly
+[tool.hatch.metadata]
+allow-direct-references = true
+
 [project]
 name = "test_framework_base"
 version = "0.0.1"
@@ -10,7 +14,7 @@ authors = [
 ]
 
 dependencies = [
-
+  "pytest"
 ]
 
 description = "A package that acts as base of test framework"
@@ -24,3 +28,7 @@ classifiers = [
 
 [project.scripts]
 test_framework= "test_framework.bin.test_framework:main"
+
+[project.optional-dependencies]
+vendorA = ["Vendor_A@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorA",]
+vendorB = ["Vendor_B@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorB",]
