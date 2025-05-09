@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "test_framework_base"
+version = "0.0.1"
+authors = [
+  { name="Aurimas Kudarauskas"},
+]
+
+dependencies = [
+
+]
+
+description = "A package that acts as base of test framework"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+test_framework= "test_framework.bin.test_framework:main"

@@ -1,0 +1,1 @@
+This python package is dedicated as sample for testframework arhitecture
