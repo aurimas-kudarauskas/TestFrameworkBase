@@ -30,5 +30,5 @@ classifiers = [
 test_framework= "test_framework.bin.test_framework:main"
 
 [project.optional-dependencies]
-vendorA = ["Vendor_A@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorA",]
-vendorB = ["Vendor_B@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorB",]
+vendor_a = ["Vendor_A@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorA",]
+vendor_b = ["Vendor_B@git+https://github.com/aurimas-kudarauskas/TestFrameworkVendorB",]
