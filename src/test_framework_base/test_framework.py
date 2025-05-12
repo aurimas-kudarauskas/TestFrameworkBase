@@ -2,6 +2,7 @@ from typing import Any
 import pytest
 
 class TestFramewor:
+    __test__ = False
     context = {}
     def __init__(self, path_to_test:str):
         self.path = path_to_test
